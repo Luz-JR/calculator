@@ -18,29 +18,14 @@ public class Calculator{
     }
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        String r = "Result: ";
+        double total = 0;
+        int j = 0;
+        double a = 0;
+        double b = 0;
         while(true){
-            System.out.println("Enter first number: ");
-            double a = scan.nextDouble();
-            System.out.println("Enter operator (+, -, *, /): ");
-            String operator = scan.next();
-            System.out.println("Enter second number: ");
-            double b = scan.nextDouble();
-            if (operator.equals("+")){
-                System.out.println(r + add(a,b));
-            } else if(operator.equals("-")){
-                System.out.println(r + substract(a,b));
-            } else if(operator.equals("*")){
-                System.out.println(r + multiply(a,b));
-            } else if(operator.equals("/")){
-                System.out.println(r + divide(a,b));
-            }else{ System.out.println("Invalid Operation");}
-            System.out.println("Do you want to continue? (yes/no)");
-            String ans = scan.next();
-            if(ans.equals("no")){
-                break;
-            }
-
+            System.out.println("Enter your operation: ");
+            String res = scan.nextLine();
+            String [] in = res.split(" ");    
         }
-        }
+    }
 }

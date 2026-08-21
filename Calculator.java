@@ -68,7 +68,7 @@ public class Calculator {
 
     private static int readChoice(Scanner scan) {
         while (true) {
-            System.out.print("Choose an operation: ");
+            System.out.print("Choose an operation(Enter the number): ");
             String input = scan.nextLine().trim();
             try {
                 return Integer.parseInt(input);
